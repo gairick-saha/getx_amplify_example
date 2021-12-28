@@ -29,7 +29,6 @@ class AddTodoController extends GetxController {
       );
 
       await _saveTodo(todo: _newTodo).then((bool _todoSubmitted) {
-        print(_todoSubmitted);
         if (_todoSubmitted) {
           Get.back();
           isTodoSubmiting(!_todoSubmitted);
